@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/idHeadingAppointmentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Id: "
+        android:textColor="@color/colorAccent"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/idAppointmentHistoryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="123"
+        android:textColor="@color/colorAccent"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/idHeadingAppointmentTextView"
+        app:layout_constraintStart_toEndOf="@id/idHeadingAppointmentTextView"
+        app:layout_constraintTop_toTopOf="@id/idHeadingAppointmentTextView" />
+
+    <TextView
+        android:id="@+id/specialistHeadingAppointmentHistoryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Specialist: "
+        android:textColor="@color/colorAccent"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/idHeadingAppointmentTextView" />
+
+    <TextView
+        android:id="@+id/specialistAppointmentHistoryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="XYCSADWSD"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="@id/specialistHeadingAppointmentHistoryTextView"
+        app:layout_constraintStart_toEndOf="@id/specialistHeadingAppointmentHistoryTextView"
+        app:layout_constraintTop_toTopOf="@id/specialistHeadingAppointmentHistoryTextView" />
+
+    <TextView
+        android:id="@+id/priceHeadingAppointmentHistoryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Price: "
+        android:textColor="@color/colorAccent"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/priceAppointmentHistoryTextView"
+        app:layout_constraintTop_toBottomOf="@id/serviceHeadingAppointmentHistoryTextView"/>
+
+    <TextView
+        android:id="@+id/priceAppointmentHistoryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="500"
+        android:textColor="@color/colorAccent"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/priceHeadingAppointmentHistoryTextView"
+        app:layout_constraintStart_toEndOf="@id/priceHeadingAppointmentHistoryTextView"
+        app:layout_constraintTop_toTopOf="@id/priceHeadingAppointmentHistoryTextView" />
+
+    <TextView
+        android:id="@+id/dateHeadingAppointmentHistoryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Appointment On: "
+        android:textColor="@color/colorAccent"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/specialistHeadingAppointmentHistoryTextView" />
+
+    <TextView
+        android:id="@+id/dateAppointmentHistoryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="67034120"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/dateHeadingAppointmentHistoryTextView"
+        app:layout_constraintStart_toEndOf="@id/dateHeadingAppointmentHistoryTextView"
+        app:layout_constraintTop_toTopOf="@id/dateHeadingAppointmentHistoryTextView" />
+
+    <TextView
+        android:id="@+id/serviceHeadingAppointmentHistoryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Service: "
+        android:textColor="@color/colorAccent"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dateHeadingAppointmentHistoryTextView" />
+    <TextView
+        android:id="@+id/serviceAppointmentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:textSize="16dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Neuro"
+        app:layout_constraintStart_toEndOf="@id/serviceHeadingAppointmentHistoryTextView"
+        app:layout_constraintTop_toTopOf="@id/serviceHeadingAppointmentHistoryTextView"
+        app:layout_constraintBottom_toBottomOf="@id/serviceHeadingAppointmentHistoryTextView"
+        android:layout_marginStart="2dp"/>
+
+    <ImageView
+        android:id="@+id/appointmentStatusImageView"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/icon_pending"
+        app:layout_constraintTop_toTopOf="@id/dateHeadingAppointmentHistoryTextView"
+        app:layout_constraintBottom_toBottomOf="@id/dateHeadingAppointmentHistoryTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="28dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

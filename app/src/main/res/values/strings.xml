@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">hack_it_out_app</string>
+    <string name="not_valid_email_address">Please enter a valid email address</string>
+    <string name="something_went_wrong">Something went wrong, please try again later</string>
+    <string name="base_url">http://192.168.1.8/</string>
+    <string name="BASE_URL">http://192.168.1.8:8000/</string>
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/nameHeadingServiceItemTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Name: "
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@id/nameServiceItemTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/nameServiceItemTextView" />
+
+    <TextView
+        android:id="@+id/nameServiceItemTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Neuro"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp"
+        app:layout_constraintStart_toEndOf="@id/nameHeadingServiceItemTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/priceHeadingServiceItemTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price: "
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/priceServiceItemTextView"
+        app:layout_constraintEnd_toStartOf="@id/priceServiceItemTextView"
+        app:layout_constraintTop_toTopOf="@id/priceServiceItemTextView"
+
+        />
+
+    <TextView
+        android:id="@+id/priceServiceItemTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="200"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/durationHeadingServiceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Duration: "
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameHeadingServiceItemTextView" />
+    <TextView
+        android:id="@+id/durationServiceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 hr"
+        android:fontFamily="@font/montserrat_bold"
+        android:textSize="16dp"
+        app:layout_constraintTop_toTopOf="@id/durationHeadingServiceTextView"
+        app:layout_constraintBottom_toBottomOf="@id/durationHeadingServiceTextView"
+        app:layout_constraintStart_toEndOf="@id/durationHeadingServiceTextView"
+        android:layout_marginStart="4dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
